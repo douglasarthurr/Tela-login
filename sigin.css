@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./images/Fundo.svg");
+  background-color: #a91079;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.main-login {
+  position: relative;
+  display: flex;
+  background-color: #141414;
+  width: 800px;
+  height: 752px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 137px;
+  border-radius: 70px;
+}
+.text {
+  text-align: center;
+}
+.icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 76px;
+  top: 141px;
+}
+.logo {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+}
+.login {
+  position: absolute;
+  top: 16px;
+  right: 79px;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+}
+.sigin {
+  position: absolute;
+  top: 46px;
+  color: white;
+  margin-block: auto;
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+}
+.icon-user {
+  margin-block: 16px;
+  border-radius: 70px;
+}
+.icon-cadeado {
+  margin-block: 16px;
+  border-radius: 70px;
+}
+.icon-cadeado1{
+  margin-block: 16px;
+  border-radius: 70px;
+}
+.icon-email{
+    margin-block: 16px;
+  border-radius: 70px;
+}
+.textfield {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+.user {
+  position: absolute;
+  right: 148px;
+  width: 498px;
+  height: 66px;
+  top: 158px;
+  border-radius: 70px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  border: #838383 solid 3px;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.pass {
+  position: absolute;
+  right: 148px;
+  width: 498px;
+  height: 66px;
+  top: 265px;
+  border-radius: 70px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  border: #838383 solid 3px;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.confirm {
+  position: absolute;
+  right: 148px;
+  width: 498px;
+  height: 66px;
+  top: 372px;
+  border-radius: 70px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  border: #838383 solid 3px;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.email {
+  position: absolute;
+  right: 148px;
+  width: 498px;
+  height: 66px;
+  top: 476px;
+  border-radius: 70px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  border: #838383 solid 3px;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.lab-user {
+  position: absolute;
+  bottom: 601px;
+  left: 160px;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.lab-pass {
+  position: absolute;
+  bottom: 495px;
+  left: 160px;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.lab-confirm {
+  position: absolute;
+  bottom: 388px;
+  left: 160px;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.lab-email {
+  position: absolute;
+  bottom: 281px;
+  left: 160px;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.bt-cad {
+  position: absolute;
+  width: 302px;
+  height: 47px;
+  border-radius: 14px;
+  background-color: #a91079;
+  font-size: 37px;
+  font-family: "Inter", sans-serif;
+  color: white;
+  border: none;
+  bottom: 46px;
+  left: 249px;
+  text-align: center;
+  text-decoration: none;
+}
+.bt-cad:hover {
+  background-color: #4d0335;
+  cursor: pointer;
+}
