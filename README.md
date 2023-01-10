@@ -35,7 +35,7 @@
 # Link de acesso.
 
 <html>
-    <a href="https://mylogin.netlify.app">Página</a>
+    <a href="https://minhaweblogin.netlify.app">Página</a>
 </html>
 
 #
