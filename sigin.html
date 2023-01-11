@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./sigin.css">
-    <title>Tela de Cadastro</title>
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <title>Tela de Cadastro</title>
 </head>
 <body>
     <section>
         <div>
-            <div class="main-login">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+                <div class="ball" ></div>
+            </label>
+    
+        </div>
+        <div>
+            <div class="mainlogin">
                 <img class="logo" src="./images/logo.svg" alt="logo">
                 <div class="icons">
                     <img class="icon-user" src="./images/icon login.svg" alt="icon-user">
@@ -19,7 +29,7 @@
                     <img class="icon-cadeado1" src="./images/icon cadeado.svg" alt="icon-pass">
                     <img class="icon-email" src="./images/E-MAIL ICON.svg" alt="icon-email">
                 </div>                
-                <div class="sigin">
+                <div class="siginup">
                     <h1>SIGIN-UP</h1>
                 </div>              
                 <a class="login" href="./index.html">LOGIN</a>                
@@ -45,6 +55,6 @@
             </div>
         </div>
     </section>
-    
+    <script src="./script.js" ></script>
 </body>
 </html>
