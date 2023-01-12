@@ -5,8 +5,7 @@
   padding: 0;
 }
 body {
-  background-image: url("./images/Fundo.svg");
-  background-color: #a91079;
+  background: linear-gradient(-50deg, #570A57, #A91079, #A91079, #2E0249);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -16,7 +15,7 @@ body {
 }
 
 body.dark{
-  background-image: url("./images/Fundo-ligth.svg");
+  background: linear-gradient(-50deg, #FF77FF, #FF75D4, #FF75D4, #CC79FF);
   background-color: #FF75D4;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,7 +88,7 @@ body.dark{
   justify-content: center;
   align-items: center;
   margin-inline: auto;
-  margin-top: 137px;
+  margin-top: 25vh;
   border-radius: 70px;
 }
 
@@ -103,7 +102,7 @@ body.dark{
   justify-content: center;
   align-items: center;
   margin-inline: auto;
-  margin-top: 137px;
+  margin-top: 25vh;
   border-radius: 70px;
 }
 
