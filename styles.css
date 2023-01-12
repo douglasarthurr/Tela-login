@@ -4,311 +4,975 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background: linear-gradient(-50deg, #570A57, #A91079, #A91079, #2E0249);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
 
-  height: 100vh;
-  transition: background 0.2s linear;
-}
-
-body.dark{
-  background: linear-gradient(-50deg, #FF77FF, #FF75D4, #FF75D4, #CC79FF);
-  background-color: #FF75D4;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.checkbox{
-  opacity: 0;
-  position: absolute;
+@media screen and (min-width: 320px) {
   
+  body {
+    background: linear-gradient(-50deg, #570A57, #A91079, #A91079, #2E0249);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    height: 210vh;
+    transition: background 0.2s linear;
+  }
+
+  body.dark{
+    background: linear-gradient(-50deg, #FF77FF, #FF75D4, #FF75D4, #CC79FF);
+    background-color: #FF75D4;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .checkbox{
+    opacity: 0;
+    position: absolute;
+    
+  }
+
+  .label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+    left: 30px;
+    top: 30px;
+
+  }
+
+  .label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+
+  }
+
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+
+  .fa-moon{
+    color: #f1c40f;
+
+  }
+
+  .fa-sun{
+    color: #f39c12;
+  }
+
+
+  .mainlogin {
+    position: relative;
+    display: flex;
+    background-color: #141414;
+    width: 292px;
+    height: 402px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 25vh;
+    border-radius: 40px;
+  }
+
+  .mainlogin.dark {
+    position: relative;
+    display: flex;
+    background-color: #E4E4E4;
+    width: 293px;
+    height: 402px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 25vh;
+    border-radius: 40px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 12px;
+    top: 73px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 40px;
+  }
+
+  .siginup {
+    position: absolute;
+    top: 7px;
+    right: 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .siginup.dark {
+    position: absolute;
+    top: 7px;
+    right: 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+
+  .login {
+    position: absolute;
+    top: 27px;
+    color: white;
+    margin-block: auto;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .login.dark {
+    position: absolute;
+    top: 27px;
+    color: rgb(0, 0, 0);
+    margin-block: auto;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .icon-cadeado {
+    margin-block: 15px;
+    border-radius: 70px;
+    width: 40px;
+  }
+  .icon-user {
+    margin-block: 15px;
+    border-radius: 70px;
+    width: 40px;
+  }
+  .textfield {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .user {
+    position: absolute;
+    right: 55px;
+    top: 90px;
+    width: 182px;
+    height: 37px;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 2px;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+  .pass {
+    position: absolute;
+    right: 55px;
+    top: 160px;
+    width: 182px;
+    height: 37px;
+    border-radius: 47px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 2px;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+  .lab-user {
+    position: absolute;
+    bottom: 315px;
+    left: 69px;
+    color: white;
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-user.dark {
+    position: absolute;
+    bottom: 315px;
+    left: 69px;
+    color: rgb(0, 0, 0);
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-pass {
+    position: absolute;
+    bottom: 245px;
+    left: 69px;
+    color: white;
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-pass.dark {
+    position: absolute;
+    bottom: 245px;
+    left: 69px;
+    color: rgb(0, 0, 0);
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .bt-login {
+    position: absolute;
+    width: 110.23px;
+    height: 39.36px;
+    border-radius: 14px;
+    background-color: #a91079;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    border: none;
+    bottom: 129px;  }
+
+  .bt-login:hover {
+    background-color: #4d0335;
+    cursor: pointer;
+  }
+  .forgot {
+    position: absolute;
+    bottom: 193px;
+    right: 60px;
+    font-size: 8px;
+    color: #018878;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+  }
+  .remember {
+    position: absolute;
+    bottom: 192px;
+    left: 66px;
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+
+  .remember.dark {
+    position: absolute;
+    bottom: 192px;
+    left: 66px;
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .bt-remember {
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 1px;
+    position: absolute;
+    bottom: 195px;
+    left: 55px;
+    width: 6px;
+    height: 6px;
+  }
+  .bt-remember:hover {
+    cursor: pointer;
+  }
+  .bt-remember::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #141414;
+    border: #838383 solid 1px;
+  }
+
+  .bt-remember:checked:after {
+    content: "";
+    width: 12.56px;
+    height: 12.56px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1px;
+    left: 5px;
+  }
 }
 
-.label{
-  background-color: #111;
-  border-radius: 50px;
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  
+  body {
+    background: linear-gradient(-50deg, #570A57, #A91079, #A91079, #2E0249);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    height: 100vh;
+    transition: background 0.2s linear;
+  }
 
-  padding: 5px;
-  position: relative;
-  height: 26px;
-  width: 50px;
+  body.dark{
+    background: linear-gradient(-50deg, #FF77FF, #FF75D4, #FF75D4, #CC79FF);
+    background-color: #FF75D4;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  transform: scale(1.5);
-  left: 30px;
-  top: 30px;
+  }
 
+  .checkbox{
+    opacity: 0;
+    position: absolute;
+    
+  }
+
+  .label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+    left: 30px;
+    top: 30px;
+
+  }
+
+  .label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+
+  }
+
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+
+  .fa-moon{
+    color: #f1c40f;
+
+  }
+
+  .fa-sun{
+    color: #f39c12;
+  }
+
+
+  .mainlogin {
+    position: relative;
+    display: flex;
+    background-color: #141414;
+    width: 670px;
+    height: 402px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 25vh;
+    border-radius: 70px;
+  }
+
+  .mainlogin.dark {
+    position: relative;
+    display: flex;
+    background-color: #E4E4E4;
+    width: 670px;
+    height: 402px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 25vh;
+    border-radius: 70px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 62px;
+    top: 115px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  .siginup {
+    position: absolute;
+    top: 12px;
+    right: 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .siginup.dark {
+    position: absolute;
+    top: 12px;
+    right: 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+
+  .login {
+    position: absolute;
+    top: 46px;
+    color: white;
+    margin-block: auto;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .login.dark {
+    position: absolute;
+    top: 46px;
+    color: rgb(0, 0, 0);
+    margin-block: auto;
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .icon-cadeado {
+    margin-block: 15px;
+    border-radius: 70px;
+    width: 61.14px;
+  }
+  .icon-user {
+    margin-block: 15px;
+    border-radius: 70px;
+    width: 61.14px;
+  }
+  .textfield {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .user {
+    position: absolute;
+    right: 127px;
+    top: 131px;
+    width: 417.08px;
+    height: 55.28px;
+    border-radius: 47px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 3px;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+  .pass {
+    position: absolute;
+    right: 127px;
+    top: 220px;
+    width: 417.08px;
+    height: 55.28px;
+    border-radius: 47px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 3px;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+  .lab-user {
+    position: absolute;
+    bottom: 273px;
+    left: 134px;
+    color: white;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-user.dark {
+    position: absolute;
+    bottom: 273px;
+    left: 134px;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-pass {
+    position: absolute;
+    bottom: 184px;
+    left: 134px;
+    color: white;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-pass.dark {
+    position: absolute;
+    bottom: 184px;
+    left: 134px;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .bt-login {
+    position: absolute;
+    width: 252.54px;
+    height: 39.36px;
+    border-radius: 14px;
+    background-color: #a91079;
+    font-size: 26px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    border: none;
+    bottom: 37px;
+  }
+
+  .bt-login:hover {
+    background-color: #4d0335;
+    cursor: pointer;
+  }
+  .forgot {
+    position: absolute;
+    bottom: 107px;
+    right: 149px;
+    font-size: 13px;
+    color: #018878;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+  }
+  .remember {
+    position: absolute;
+    bottom: 107px;
+    left: 149px;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+
+  .remember.dark {
+    position: absolute;
+    bottom: 107px;
+    left: 149px;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .bt-remember {
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 1px;
+    position: absolute;
+    bottom: 112px;
+    left: 130px;
+    width: 12.56px;
+    height: 12.56px;
+  }
+  .bt-remember:hover {
+    cursor: pointer;
+  }
+  .bt-remember::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #141414;
+    border: #838383 solid 1px;
+  }
+
+  .bt-remember:checked:after {
+    content: "";
+    width: 12.56px;
+    height: 12.56px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1px;
+    left: 5px;
+  }
 }
 
-.label .ball{
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
+@media screen and (min-width: 1024px) {
+  
+  body {
+    background: linear-gradient(-50deg, #570A57, #A91079, #A91079, #2E0249);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 
-  height: 22px;
-  width: 22px;
+    height: 100vh;
+    transition: background 0.2s linear;
+  }
 
+  body.dark{
+    background: linear-gradient(-50deg, #FF77FF, #FF75D4, #FF75D4, #CC79FF);
+    background-color: #FF75D4;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
+  }
 
-}
+  .checkbox{
+    opacity: 0;
+    position: absolute;
+    
+  }
 
-.checkbox:checked + .label .ball{
-  transform: translateX(24px);
-}
+  .label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
 
-.fa-moon{
-  color: #f1c40f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-}
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
 
-.fa-sun{
-  color: #f39c12;
-}
+    transform: scale(1.5);
+    left: 30px;
+    top: 30px;
 
+  }
 
-.mainlogin {
-  position: relative;
-  display: flex;
-  background-color: #141414;
-  width: 800px;
-  height: 480px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-inline: auto;
-  margin-top: 25vh;
-  border-radius: 70px;
-}
+  .label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
 
-.mainlogin.dark {
-  position: relative;
-  display: flex;
-  background-color: #E4E4E4;
-  width: 800px;
-  height: 480px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-inline: auto;
-  margin-top: 25vh;
-  border-radius: 70px;
-}
-
-.text {
-  text-align: center;
-}
-
-.icons {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 76px;
-}
-
-.logo {
-  position: absolute;
-  top: 36px;
-  left: 36px;
-}
-
-.siginup {
-  position: absolute;
-  top: 16px;
-  right: 79px;
-  font-family: "Inter", sans-serif;
-  font-size: 32px;
-  text-decoration: none;
-  color: white;
-}
-
-.siginup.dark {
-  position: absolute;
-  top: 16px;
-  right: 79px;
-  font-family: "Inter", sans-serif;
-  font-size: 32px;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
+    height: 22px;
+    width: 22px;
 
 
-.login {
-  position: absolute;
-  top: 46px;
-  color: white;
-  margin-block: auto;
-  font-size: 40px;
-  font-family: "Inter", sans-serif;
-}
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
 
-.login.dark {
-  position: absolute;
-  top: 46px;
-  color: rgb(0, 0, 0);
-  margin-block: auto;
-  font-size: 40px;
-  font-family: "Inter", sans-serif;
-}
+  }
 
-.icon-cadeado {
-  margin-block: 15px;
-  border-radius: 70px;
-}
-.icon-user {
-  margin-block: 15px;
-  border-radius: 70px;
-}
-.textfield {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-.inputs {
-  display: flex;
-  flex-direction: column;
-}
-.user {
-  position: absolute;
-  right: 148px;
-  width: 498px;
-  height: 66px;
-  top: 158px;
-  border-radius: 70px;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0);
-  border: #838383 solid 3px;
-  font-family: "Inter", sans-serif;
-  color: white;
-}
-.pass {
-  position: absolute;
-  right: 148px;
-  width: 498px;
-  height: 66px;
-  top: 265px;
-  border-radius: 70px;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0);
-  border: #838383 solid 3px;
-  font-family: "Inter", sans-serif;
-  color: white;
-}
-.lab-user {
-  position: absolute;
-  bottom: 327px;
-  left: 160px;
-  color: white;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-}
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
 
-.lab-user.dark {
-  position: absolute;
-  bottom: 327px;
-  left: 160px;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-}
+  .fa-moon{
+    color: #f1c40f;
 
-.lab-pass {
-  position: absolute;
-  bottom: 221px;
-  left: 160px;
-  color: white;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-}
+  }
 
-.lab-pass.dark {
-  position: absolute;
-  bottom: 221px;
-  left: 160px;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-}
-
-.bt-login {
-  position: absolute;
-  width: 302px;
-  height: 47px;
-  border-radius: 14px;
-  background-color: #a91079;
-  font-size: 37px;
-  font-family: "Inter", sans-serif;
-  color: white;
-  border: none;
-  bottom: 46px;
-}
-
-.bt-login:hover {
-  background-color: #4d0335;
-  cursor: pointer;
-}
-.forgot {
-  position: absolute;
-  bottom: 122px;
-  right: 151px;
-  font-size: 16px;
-  color: #018878;
-  font-family: "Inter", sans-serif;
-  text-decoration: none;
-}
-.remember {
-  position: absolute;
-  bottom: 122px;
-  left: 177px;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  color: white;
-  text-decoration: none;
-}
-.bt-remember {
-  background-color: rgba(0, 0, 0, 0);
-  border: #838383 solid 1px;
-  position: absolute;
-  bottom: 126px;
-  left: 157px;
-  width: 15px;
-  height: 15px;
-}
+  .fa-sun{
+    color: #f39c12;
+  }
 
 
-.bt-remember:hover {
-  cursor: pointer;
-}
-.bt-remember::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: #141414;
-  border: #838383 solid 1px;
-}
+  .mainlogin {
+    position: relative;
+    display: flex;
+    background-color: #141414;
+    width: 800px;
+    height: 480px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 25vh;
+    border-radius: 70px;
+  }
 
-.bt-remember:checked:after {
-  content: "";
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: absolute;
-  top: 1px;
-  left: 5px;
+  .mainlogin.dark {
+    position: relative;
+    display: flex;
+    background-color: #E4E4E4;
+    width: 800px;
+    height: 480px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 25vh;
+    border-radius: 70px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 76px;
+    top: 140px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+  }
+
+  .siginup {
+    position: absolute;
+    top: 16px;
+    right: 79px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .siginup.dark {
+    position: absolute;
+    top: 16px;
+    right: 79px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+
+  .login {
+    position: absolute;
+    top: 46px;
+    color: white;
+    margin-block: auto;
+    font-size: 64px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .login.dark {
+    position: absolute;
+    top: 46px;
+    color: rgb(0, 0, 0);
+    margin-block: auto;
+    font-size: 64px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .icon-cadeado {
+    margin-block: 15px;
+    border-radius: 70px;
+    width: 70px;
+  }
+  .icon-user {
+    margin-block: 15px;
+    border-radius: 70px;
+    width: 70px;
+  }
+  .textfield {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .user {
+    position: absolute;
+    right: 148px;
+    width: 498px;
+    height: 66px;
+    top: 158px;
+    border-radius: 70px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 3px;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+  .pass {
+    position: absolute;
+    right: 148px;
+    width: 498px;
+    height: 66px;
+    top: 265px;
+    border-radius: 70px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 3px;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+  .lab-user {
+    position: absolute;
+    bottom: 327px;
+    left: 160px;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-user.dark {
+    position: absolute;
+    bottom: 327px;
+    left: 160px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-pass {
+    position: absolute;
+    bottom: 221px;
+    left: 160px;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .lab-pass.dark {
+    position: absolute;
+    bottom: 221px;
+    left: 160px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .bt-login {
+    position: absolute;
+    width: 302px;
+    height: 47px;
+    border-radius: 14px;
+    background-color: #a91079;
+    font-size: 37px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    border: none;
+    bottom: 46px;
+  }
+
+  .bt-login:hover {
+    background-color: #4d0335;
+    cursor: pointer;
+  }
+  .forgot {
+    position: absolute;
+    bottom: 122px;
+    right: 151px;
+    font-size: 16px;
+    color: #018878;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+  }
+  .remember {
+    position: absolute;
+    bottom: 122px;
+    left: 177px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+  .remember.dark {
+    position: absolute;
+    bottom: 122px;
+    left: 177px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  .bt-remember {
+    background-color: rgba(0, 0, 0, 0);
+    border: #838383 solid 1px;
+    position: absolute;
+    bottom: 126px;
+    left: 157px;
+    width: 15px;
+    height: 15px;
+  }
+
+
+  .bt-remember:hover {
+    cursor: pointer;
+  }
+  .bt-remember::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #141414;
+    border: #838383 solid 1px;
+  }
+
+  .bt-remember:checked:after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1px;
+    left: 5px;
+  }
 }
