@@ -1,7 +1,5 @@
 const chk = document.getElementById('chk')
 
-
-
 chk.addEventListener('change', () =>{
     document.body.classList.toggle('dark')
     document.querySelector(".mainlogin").classList.toggle('dark')

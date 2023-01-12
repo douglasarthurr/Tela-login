@@ -1,15 +1,13 @@
 # Tela de login completa, com sigin-up, e forgot password
 
 * ## Objetivo/ideia
-### Criação de uma pagina web para login em website, completa com tela para sigin-up, botão de remember e forgot password, somente com conhecimentos basicos em HTML e CSS
+### Criação de uma pagina web para login em website, completa com tela para sigin-up, botão de remember e forgot password, tema dark e ligth, somente com conhecimentos basicos em HTML e CSS um pouco de Java Script
 #
-* ## Atualizações futuras
-### Implementação de JavaScript, aplicar responsividade no site, implementar tema dark e tema white.
 #
 * ## Tecnologias usadas:
 * ### HTML
 * ### CSS
-* ### Possivel atualização com JS
+* ### Java Script
 * ### FIGMA para designer
 
 * ## Navegação
@@ -44,7 +42,3 @@
 
 
 [<img src="https://avatars.githubusercontent.com/u/106849298?s=400&u=32da81625b4d70bc25578e099fce392b77b75634&v=4" width=115><br><sub>Douglas Arthur da Silva Bento</sub>](https://github.com/douglasarthurr)
-
-<html>
-    <a href="https://github.com/douglasarthurr"> Douglas Arthur da Silva Bento</a>
-</html>
